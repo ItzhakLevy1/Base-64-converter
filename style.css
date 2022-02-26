@@ -1,9 +1,48 @@
 html {
-    background-color: black;
-    color: white;
-    font-family: sans-serif;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
 }
 
 #container {
-    text-align: center;
+  text-align: center;
+}
+
+h1 {
+    color: rgb(0, 4, 255);
+    text-shadow: 1px 1px rgb(255, 0, 212);
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 992px) {
+  .textToDecode {
+    width: 15rem;
+    height: 1.5rem;
+  }
+
+  #decodeBtn {
+    height: 2rem;
+  }
+
+  .textToEncode {
+    width: 15rem;
+    height: 1.5rem;
+  }
+
+  #encodeBtn {
+    height: 2rem;
+  }
+  
+  html,
+  body {
+    /* Prevent left and right scrolling. */
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  #showEncodedText {
+    max-width: 22rem;
+    margin: 1rem auto;
+    word-wrap: break-word;
+  }
 }
