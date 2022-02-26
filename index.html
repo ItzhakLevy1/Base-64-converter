@@ -13,15 +13,31 @@
 
     <div id="container">
 
-        <p> &copy; Itzhak Levy &nbsp; &nbsp; &nbsp; &#x260F; 0544300508 &nbsp; &nbsp; &nbsp; &#x2709; itzhaklevydev@gmail.com</p>
+        <h4 id="myInfo"> &copy; Itzhak Levy <br> &#x260F; 0544300508 <br> &#x2709; itzhaklevydev@gmail.com</h4>
 
-        <h1>Enter your encoded input below to reveal its hidden content.</h1>
+        <br>
+
+        <hr>
         
-        <input class="enter" id="input"/>
+        <h1>ENCODE BASE 64</h1>
+        
+        <input class="textToEncode" id="textToEncode"/>
 
-        <input type="button" value="Click" onclick="convertBase64();"/>
+        <input id="encodeBtn" type="button" value="Click" onclick="encodingBase64();"/>
 
-        <h3 id="showRevealedText"></h3>
+        <h3 id="showEncodedText"></h3>
+
+        <br>
+        <br>
+        <br>
+
+        <h1>DECODE BASE 64</h1>
+        
+        <input class="textToDecode" id="textToDecode"/>
+
+        <input id="decodeBtn" type="button" value="Click" onclick="decodeingBase64();"/>
+
+        <h3 id="showDecodedText"></h3>
 
 </div>
 
